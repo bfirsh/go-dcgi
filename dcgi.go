@@ -1,7 +1,9 @@
 // Package dcgi implements CGI (Common Gateway Interface), but
 // running inside Docker containers.
 //
-// See also https://golang.org/pkg/net/http/cgi/
+// Based off https://golang.org/pkg/net/http/cgi/
+// Copyright 2011 The Go Authors. All rights reserved.
+// https://github.com/golang/go/blob/master/LICENSE
 package dcgi
 
 import (
