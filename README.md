@@ -4,9 +4,9 @@ DCGI is a technique for serving web pages dynamically with Docker. As you may kn
 
 For each HTTP request that a DGCI server receives, a Docker container is spun up to serve the HTTP request. Inside the Docker container is a [CGI](https://en.wikipedia.org/wiki/Common_Gateway_Interface) executable which handles the request. That executable could do anything – and could be written in any language or framework.
 
-Wow! No longer do we have to build Web sites which just serve static content. For example, you could "hook up" your Unix database to the World Wide Web so people all over the world could query it. Or, you could create HTML forms to allows people to transmit information into your database engine. The possibilities are limitless.
+Wow! No longer do we have to build Web sites which just serve static content. For example, you could "hook up" your Unix database to the World Wide Web so people all over the world could query it. Or, you could create HTML forms to allow people to transmit information into your database engine. The possibilities are limitless.
 
-So what's this library for? go-dcgi is a library for writing DGCI servers. It includes a Go handler, `dcgi.Handler`, which serves that HTTP request by running a Docker container.
+So, what's this library for? go-dcgi is a library for writing DGCI servers. It includes a Go HTTP handler, `dcgi.Handler`, which serves an HTTP request by running a Docker container.
 
 ## Usage
 
