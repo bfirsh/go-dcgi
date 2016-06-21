@@ -28,7 +28,7 @@ ENTRYPOINT ["perl", "/code/script.pl"]
 Build this into a container:
 
 ```bash
-$ docker build -t bfirsh/example-dcgi-app
+$ docker build -t bfirsh/example-dcgi-app .
 ```
 
 You can serve this container over HTTP with go-dcgi:
